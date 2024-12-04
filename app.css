@@ -23,3 +23,6 @@ body{
     align-items: center;
     
 }
+.purple-text, .black-text, .material-icons{
+    font-size: 2rem;
+}

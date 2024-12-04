@@ -15,11 +15,14 @@ body{
 }
 .container{
     padding: 15px 30px;
+    position: relative;
 }
 .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 .left-logo{
     display: flex;
@@ -57,7 +60,7 @@ input{
     font-size: 1.1rem;
     background-color: var(--bg-color);
     font-weight: 600;
-    padding: 11px 16px;
+    padding: 10px 16px;
     border-radius: 7px;
     border: 2px solid var(--purple-color);
     background-color: var(--purple-color);

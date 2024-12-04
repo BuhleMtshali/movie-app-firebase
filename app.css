@@ -44,7 +44,7 @@ body{
     align-items: center;
 }
 .right-logo input{
-    padding: 9px 16px;
+    padding: 12px 20px;
     border-radius: 7px;
     border: 2px solid var(--purple-color);
     background-color: var(--bg-color);
@@ -57,7 +57,7 @@ input{
     font-size: 1.1rem;
     background-color: var(--bg-color);
     font-weight: 600;
-    padding: 7px 16px;
+    padding: 11px 16px;
     border-radius: 7px;
     border: 2px solid var(--purple-color);
     background-color: var(--purple-color);

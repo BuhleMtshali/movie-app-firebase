@@ -75,3 +75,10 @@ input{
     background-color: var(--bg-color);
     color: var(--purple-color);
 }
+
+main{
+    margin-top: 80px;
+}
+.trending-text{
+    font-size: 2.2rem;
+}

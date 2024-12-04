@@ -21,8 +21,18 @@ body{
 .left-logo{
     display: flex;
     align-items: center;
-    
 }
-.purple-text, .black-text, .material-icons{
-    font-size: 2rem;
+
+.left-logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.purple-text, .black-text{
+    font-size: 2.2rem;
+    font-weight:700;
+}
+.purple-text{
+    color: var(--purple-color);
+
 }

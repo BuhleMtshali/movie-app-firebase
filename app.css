@@ -86,15 +86,12 @@ main{
     font-size: 2.2rem;
 }
 .movie-feed{
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-    
-
+    grid-auto-rows: auto;
+    position: relative;   
 }
+
 .movie-year{
     display: flex;
     justify-content: space-between;

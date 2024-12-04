@@ -3,6 +3,9 @@
     --text-color:#141414;
     --purple-color: #844FF8;
 }
+*:focus{
+outline: none;
+}
 
 body{
     font-family: "Inter Tight", sans-serif;
@@ -35,4 +38,37 @@ body{
 .purple-text{
     color: var(--purple-color);
 
+}
+.right-logo{
+    display: flex;
+    align-items: center;
+}
+.right-logo input{
+    padding: 9px 16px;
+    border-radius: 7px;
+    border: 2px solid var(--purple-color);
+    background-color: var(--bg-color);
+    color: var(--purple-color);
+}
+input{
+    margin-right: 5px;
+}
+.right-logo button{
+    font-size: 1.1rem;
+    background-color: var(--bg-color);
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 7px;
+    border: 2px solid var(--purple-color);
+    background-color: var(--purple-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+::placeholder{
+    font-size: 0.9rem;
+}
+.right-logo button:hover{
+    background-color: var(--bg-color);
+    color: var(--purple-color);
 }

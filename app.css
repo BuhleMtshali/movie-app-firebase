@@ -1,0 +1,10 @@
+:root{
+    --bg-color:#F0F0F0;
+    --text-color:#141414;
+    --purple-color: #844FF8;
+}
+
+body{
+    font-family: "Inter Tight", sans-serif;
+    margin: 0 auto;
+}

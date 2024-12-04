@@ -30,9 +30,15 @@ function renderMovies(movies){
         const movieItem = document.createElement('div');
         movieItem.classList.add('movie-item');
         movieItem.innerHTML = `
-                                <h3>${movie.title}</h3>
-                                <img src="${movie.image}"/>
-                                <p>${movie.year}</p>
+                                <h2>${movie.title}</h2>
+                                <img src="${movie.image}" class="img-movie"/>
+                                <div class="info">
+                                <p class="description">${movie.description}</p>
+                                <div class="movie-year">
+                                <p>${movie.year}</p> 
+                                <p>${movie.rating}</p>
+                                </div>
+                                </div>
                                 `;
         movieFeedElement.appendChild(movieItem)
     })

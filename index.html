@@ -10,27 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/47ef0eeb2e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <div class="left-logo">
-            <span class="purple-text">Chill</span>
-            <span class="black-text">Counch</span>
-            <img src="assets/popcorn.png" alt="logo">
-            </div>
-            <div class="right-logo">
+<div class="container">
+    <div class="logo">
+         <div class="left-logo">
+         <span class="purple-text">Chill</span>
+         <span class="black-text">Counch</span>
+         <img src="assets/popcorn.png" alt="logo">
+         </div>
+          <div class="right-logo">
             <input type="search" id="search-input" placeholder="Search movie/series...">
-            <button id="search-btn">Search</button>
+         <button id="search-btn">Search</button>
             </div>
             <!-- end of right-logo -->
         </div>
         <!-- end of logo div -->
     <main>
-    <p class="trending-text">What's trending...</p>
+    <p class="trending-text">See what's trending...</p>
     <div class="movie-feed" id="movie-feed"></div>    
     </main>
     </div>
     <!-- end of container div -->
+     <script type="module" src="app.js"></script>
 </body>
 </html>

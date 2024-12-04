@@ -1,7 +1,7 @@
 :root{
-    --bg-color:#F0F0F0;
+    --bg-color:white;
     --text-color:#141414;
-    --purple-color: #844FF8;
+    --purple-color: #141414;
 }
 *:focus{
 outline: none;
@@ -14,7 +14,7 @@ body{
     box-sizing: border-box;
 }
 .container{
-    padding: 5px;
+    padding: 15px 30px;
 }
 .logo{
     display: flex;

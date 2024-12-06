@@ -33,7 +33,7 @@ function renderMovies(movies){
                                 <h2>${movie.title}</h2>
                                 <img src="${movie.image}" class="img-movie"/>
                                 <div class="info">
-                                <p class="description">${movie.description}</p>
+                                <p class="  ">${movie.description}</p>
                                 <div class="movie-year">
                                 <p>${movie.year}</p> 
                                 <p>${movie.rating}</p>

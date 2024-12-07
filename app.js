@@ -73,7 +73,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
     inputValue.value = ''
 })
 
-
+//function for finding a movie
 function findMovie(value){
     const options = {
         method: 'GET',
@@ -88,4 +88,9 @@ function findMovie(value){
       };
       let apiURL = 'https://mdblist.p.rapidapi.com/'
       axios.get(apiURL, options).then(response => renderSearch(response.data)).catch(error => console.error(`Error fetching ${value}`, error))
+}
+
+//function for rendering the search
+function renderSearch(data) {
+console.log(data)
 }

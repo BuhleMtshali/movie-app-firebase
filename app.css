@@ -104,34 +104,5 @@ main{
 .movie-item{
     padding: 15px;
     position: relative;
-}
-.info{
-    /* position: absolute;
-    bottom: 0;          /* Align to the bottom */
-    /* left: 0;        
-    text-align: center;    Optional: Align to the left */ 
     
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 16px;
-  text-align: center;
-    
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
-    cursor: pointer;
-}
-.movie-item:hover{
-    opacity: 0.1;
-}
-.movie-item:hover .info {
-    opacity: 1;
-    visibility: visible;
-    color: var(--text-color);
-    font-weight: bolder;
-}
-.movie-item:hover .description {
-    color: black;
 }

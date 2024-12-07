@@ -1,0 +1,11 @@
+:root{
+    --bg-color:white;
+    --text-color:#141414;
+    --purple-color: #141414;
+}
+.top-text{
+    text-decoration: underline;
+}
+.watchlist-container{
+    padding: 15px;
+}

@@ -78,8 +78,9 @@ function findMovie(value){
     const options = {
         method: 'GET',
         params: {
-          s: `${value}`,
-          m: `${value}`
+            s: value,
+            m: value
+          
         },
         headers: {
           'x-rapidapi-key': 'eea6a34f4dmsh296963a5654d19ep13d93ajsn94fa453c501f',
@@ -87,10 +88,21 @@ function findMovie(value){
         }
       };
       let apiURL = 'https://mdblist.p.rapidapi.com/'
-      axios.get(apiURL, options).then(response => renderSearch(response.data)).catch(error => console.error(`Error fetching ${value}`, error))
+
+      axios.get(apiURL, options).then(response => renderSearch(response.data.search)).catch(error => console.error(`Error fetching ${value}`, error))
 }
 
 //function for rendering the search
 function renderSearch(data) {
+movieFeedElement.innerHTML = '';
 console.log(data)
+data.forEach((item) => {
+    const movieItem = document.createElement('div');
+        movieItem.classList.add('movie-item');
+        movieItem.innerHTML = `
+                                <h2>${item.title}</h2>
+                        
+                                `;
+        movieFeedElement.appendChild(movieItem)
+    })
 }

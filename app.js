@@ -32,12 +32,6 @@ function renderMovies(movies){
         movieItem.innerHTML = `
                                 <h2>${movie.title}</h2>
                                 <img src="${movie.image}" class="img-movie"/>
-                                <div class="info">
-                                <div class="movie-year">
-                                <p>${movie.year}</p> 
-                                <p>${movie.rating}</p>
-                                </div>
-                                </div>
                                 `;
         movieFeedElement.appendChild(movieItem)
     })

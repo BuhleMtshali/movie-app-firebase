@@ -1,0 +1,11 @@
+@media  screen and (max-width: 768px) {
+   .search-menu{
+    display: none;
+   }
+    
+   div.menu{
+    display: flex;
+    width: 60px;
+    height: 60px;
+   }
+}

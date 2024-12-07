@@ -78,30 +78,30 @@ function findMovie(value){
     const options = {
         method: 'GET',
         params: {
-            s: value,
-            m: value
+            s: `${value}`
           
         },
         headers: {
           'x-rapidapi-key': 'eea6a34f4dmsh296963a5654d19ep13d93ajsn94fa453c501f',
-          'x-rapidapi-host': 'mdblist.p.rapidapi.com'
+          'x-rapidapi-host': 'movie-database-by-based-api.p.rapidapi.com'
         }
       };
-      let apiURL = 'https://mdblist.p.rapidapi.com/'
+      let apiURL = 'https://movie-database-by-based-api.p.rapidapi.com/v1/movies/'
 
-      axios.get(apiURL, options).then(response => renderSearch(response.data.search)).catch(error => console.error(`Error fetching ${value}`, error))
+      axios.get(apiURL, options).then(response => renderSearch(response.data.Search)).catch(error => console.error(`Error fetching ${value}`, error))
 }
 
 //function for rendering the search
 function renderSearch(data) {
+    console.log(data)
 movieFeedElement.innerHTML = '';
 console.log(data)
 data.forEach((item) => {
     const movieItem = document.createElement('div');
         movieItem.classList.add('movie-item');
         movieItem.innerHTML = `
-                                <h2>${item.title}</h2>
-                        
+                                <h2>${item.Title}</h2>
+                        <img src="${item.Poster}" class="img-movie"/>
                                 `;
         movieFeedElement.appendChild(movieItem)
     })

@@ -81,6 +81,7 @@ input{
 }
 div.menu{
     display: none;
+    cursor: pointer;
 }
 main{
     margin-top: 80px;

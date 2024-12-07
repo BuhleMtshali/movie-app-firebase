@@ -1,7 +1,18 @@
+//function for navbar
+document.getElementById('menu-bar').addEventListener('click', () => {
+    console.log('button clicked')
+    let rightNavElement = document.querySelector('.search-menu')
+    if(rightNavElement.className === 'right-logo'){
+        rightNavElement.className += 'responsive';
+    } else {
+        rightNavElement.className = 'right-logo'
+    }
+})
+
+
+
 //function for the movie feed 
 let movieFeedElement = document.getElementById('movie-feed');
-
-
 //function for reloading the window
 document.addEventListener('DOMContentLoaded', () => {
     getMovies()

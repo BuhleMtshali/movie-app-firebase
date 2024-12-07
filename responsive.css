@@ -30,10 +30,23 @@
    .search-menu{
     display: none;
    }
-
+.left-logo.responsive{
+    display: none;
+}
    
    .right-logo.responsive{
-    text-align: left;
-    float: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
    }
+   .right-logo.responsive .search-menu {
+    display: flex; /* Make it visible when responsive class is applied */
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#menu-bar.responsive{
+    position: relative;
+    right: 0;
+}
+
 }

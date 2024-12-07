@@ -1,12 +1,27 @@
 //function for navbar
 document.getElementById('menu-bar').addEventListener('click', () => {
     console.log('button clicked')
-    let rightNavElement = document.querySelector('.search-menu')
-    if(rightNavElement.className === 'right-logo'){
-        rightNavElement.className += 'responsive';
+    let rightNavElement = document.querySelector('.right-logo')
+    let leftNavElement = document.querySelector('.left-logo')
+    let menuNav = document.querySelector('#menu-bar')
+    if(rightNavElement.classList.contains('responsive')){
+        rightNavElement.classList.remove('responsive');
     } else {
-        rightNavElement.className = 'right-logo'
+        rightNavElement.classList.add('responsive')
     }
+
+    if(leftNavElement.classList.contains('responsive')){
+        leftNavElement.classList.remove('responsive');
+    } else {
+        leftNavElement.classList.add('responsive')
+    }
+ 
+    if(menuNav.classList.contains('responsive')){
+        menuNav.classList.remove('responsive')
+    } else {
+        menuNav.classList.add('responsive')
+    }
+
 })
 
 

@@ -97,12 +97,18 @@ function renderSearch(data) {
 movieFeedElement.innerHTML = '';
 console.log(data)
 data.forEach((item) => {
-    const movieItem = document.createElement('div');
+    if(item){
+        const movieItem = document.createElement('div');
         movieItem.classList.add('movie-item');
         movieItem.innerHTML = `
                                 <h2>${item.Title}</h2>
                         <img src="${item.Poster}" class="img-movie"/>
                                 `;
         movieFeedElement.appendChild(movieItem)
+    } else {
+        alert(`Unfortunately the ${item} does not exist`)
+    }
     })
+
 }
+
